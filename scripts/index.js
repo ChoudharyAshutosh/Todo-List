@@ -9,7 +9,9 @@ function add(event){
 function trash(id){
     document.getElementById(id).remove();
     if(document.getElementById('completed-task').innerHTML=='')
-    document.getElementsByTagName('hr')[0].remove();
+    {document.getElementsByTagName('hr')[0].remove();
+    document.getElementById('completed-task').remove();
+    }
 }
 function change_state(id){
     if(document.getElementById('completed-task')==undefined)
