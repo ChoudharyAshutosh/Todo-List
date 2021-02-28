@@ -1,0 +1,86 @@
+body{
+    background-color: lightgrey;
+}
+#todo{
+    background-color:rgb(153, 102, 51,0.5);
+    margin: 2% 3% 2% 2%;
+    height: 92vh;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#todo > p{
+    padding: 1%;
+}
+#todo > p:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(161, 6, 6);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+input{
+    padding:1%;
+    width:99%;
+    margin-right: -20px;
+    background-color: rgb(255, 255, 255, 0.4);
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    color: black;
+    border: 0px;
+    outline: none;
+}
+#add_button{
+    font-size: 200%;
+    padding:0% 1%;
+    border: 0px;
+    outline: none;
+    color: rgb(161, 6, 6);
+    border-radius: 25px;
+    cursor: pointer;
+}
+#current-task, #completed-task{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.task-container{
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    margin:1%;
+    background-color: rgb(255, 255, 255, 1);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color:red;
+}
+.task{
+    width:90%;
+    margin: 0%;
+    margin-right:0.5%;
+    font-size: 110%;
+}
+.trash{
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+}
+.check{
+    font-size: 20px;
+    color: green;
+    margin-left: 1%;
+    cursor: pointer;
+}
+hr{
+    width:60%;
+    height: 0.5%;
+    background-color: white;
+    opacity: 0.5;
+}
+#completed-task{
+    opacity: 0.5;
+}
+.reverse{
+    color:white;
+    background-color: green;
+    border: green;
+    border-radius: 50%;
+}
